@@ -1,5 +1,5 @@
 # BetPlus-Java-Android
- A android game includes many funny gamblings
+ This android game includes many funny gamblings
 
 ![881ca3705884a0daf995](https://user-images.githubusercontent.com/60953757/74332075-9ca34d80-4dc7-11ea-9256-a102a2d445d9.jpg)
 
