@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/curve"
+    android:layout_width="500dp"
+    android:weightSum="10"
+    android:layout_height="300dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1.5"
+        android:layout_height="0dp"
+        android:background="@drawable/curve2">
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hướng dẫn chơi"
+            android:textColor="#E4ECDC"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="8.2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Có tất cả 100 mã vé, đánh số từ 0 đến 99 để bạn lựa chọn."
+                android:textSize="16sp"
+                android:textColor="#1A1A12"
+                />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mỗi ngày chỉ được mua tối đa 10 vé, trong đó mỗi mã vé có thể được mua nhiều lần, mỗi lần mua được tính là một vé."
+                android:textSize="16sp"
+                android:textColor="#1A1A12"
+                />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sau khi mua vé, tài khoản sẽ lập tức bị trừ tiền."
+                android:textSize="16sp"
+                android:textColor="#1A1A12"
+                />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Với mỗi vé số trúng thưởng, bạn nhận được số coin tương đương 70 lần giá trị của vé đó."
+                android:textSize="16sp"
+                android:textColor="#1A1A12"
+                />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Xổ số diễn ra vào 17:00 hàng ngày, sau thời điểm này, bạn không thể mua thêm vé mới."
+                android:textSize="16sp"
+                android:textColor="#1A1A12"
+                />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mỗi ngày, chỉ có thể mua vé trong khoảng thời gian từ 0:00 đến 16:59."
+                android:textSize="16sp"
+                android:textColor="#1A1A12"
+                />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sau khi mua vé, bạn có thể xem lại các vé đã mua trong mục 'Đã mua'."
+                android:textSize="16sp"
+                android:textColor="#1A1A12"
+                />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Để nhận thưởng, vào mục 'Đã mua', sau đó ấn nút 'Nhận thưởng'. Lưu ý: chỉ nhận thưởng sau khi đã xổ số (sau 17:00)."
+                android:textSize="16sp"
+                android:textColor="#1A1A12"
+                />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chúc bạn may mắn!"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#1A1A12"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <Button
+        android:layout_gravity="center_horizontal"
+        android:textColor="#E3E9DD"
+        android:background="@drawable/selector"
+        android:id="@+id/out_ok"
+        android:textAllCaps="false"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:text="Đã hiểu"/>
+</LinearLayout>

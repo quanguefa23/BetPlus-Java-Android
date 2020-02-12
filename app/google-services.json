@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "303787494685",
+    "firebase_url": "https://bet-plus-95e17.firebaseio.com",
+    "project_id": "bet-plus-95e17",
+    "storage_bucket": "bet-plus-95e17.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:303787494685:android:4d0bd48ab8bd3e424c65f4",
+        "android_client_info": {
+          "package_name": "com.nhq.betplus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "303787494685-9n3ecbutfuop9teopqv1lfgr9mkqlgeh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nhq.betplus",
+            "certificate_hash": "5f2544f97bcc315f12f1cc5e71d3be31a31fb12a"
+          }
+        },
+        {
+          "client_id": "303787494685-01gh7ihf7lfi0tltn6mhaa80moort864.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCa-YpoZIEfgJfK9BAxXd-07jUjPMBEJnY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "303787494685-01gh7ihf7lfi0tltn6mhaa80moort864.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

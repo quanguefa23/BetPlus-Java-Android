@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@drawable/curve"
+    android:layout_width="match_parent"
+    android:layout_margin="30dp"
+    android:weightSum="10"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1.5"
+        android:layout_height="0dp"
+        android:background="@drawable/curve2">
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9/10/2018"
+            android:textColor="#E4ECDC"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight="6.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <GridLayout
+            android:layout_centerInParent="true"
+            android:id="@+id/game3_data_layout"
+            android:columnCount="5"
+            android:rowCount="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </GridLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+        <Button
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="100dp"
+            android:textColor="#495F2E"
+            android:background="@drawable/cancel_button_custom"
+            android:layout_alignParentStart="true"
+            android:id="@+id/out_cancel"
+            android:textAllCaps="false"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:text="Trở về"/>
+
+        <Button
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="100dp"
+            android:textColor="#E3E9DD"
+            android:background="@drawable/selector"
+            android:id="@+id/out_ok"
+            android:layout_alignParentEnd="true"
+            android:textAllCaps="false"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:text="Nhận thưởng"/>
+    </RelativeLayout>
+</LinearLayout>

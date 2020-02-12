@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/background1"
+    android:orientation="vertical"
+    android:weightSum="10"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4.5">
+
+        <TextView
+            android:id="@+id/addCoin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/addcoin_background"
+            android:drawableLeft="@drawable/addcoin_shape"
+            android:text="  FREE COIN"
+            android:textColor="#EE920A"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/game1_title_background"
+            android:fontFamily="sans-serif-medium"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="ĐUA THÚ"
+            android:textColor="#E6FFE6"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/sumcoin"
+            android:layout_width="77dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/coin_shape"
+            android:text="1000"
+            android:textColor="#FAB40A"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addCoin" />
+
+        <TextView
+            android:id="@+id/sumgem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="45dp"
+            android:drawableLeft="@drawable/gem_shape"
+            android:text="0"
+            android:textColor="#03A9F4"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addCoin" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="98dp"
+            android:layout_marginTop="20dp"
+            android:checkedButton="@id/coin100"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.22"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RadioButton
+                android:id="@+id/coin100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner2"
+                android:buttonTint="#EBB208"
+                android:paddingRight="7dp"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:text="100"
+                android:textColor="#EBB208"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/coin300"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner2"
+                android:buttonTint="#EBB208"
+                android:paddingRight="7dp"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:text="300"
+                android:textColor="#EBB208"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/coin500"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner2"
+                android:buttonTint="#EBB208"
+                android:paddingRight="7dp"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:text="500"
+                android:textColor="#EBB208"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/game1_guide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/guide_background"
+                    android:drawableLeft="@drawable/guide_shape"
+                    android:text=" Hướng dẫn"
+                    android:textColor="#F6D397"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/game3_back"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/back" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:text="Player: quanguefa56"
+                android:textColor="#E6FFFFFF"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="Level : 8"
+                android:textColor="#E6FFFFFF"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/pokeWinner"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/title"
+            app:srcCompat="@drawable/pokee5" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:id="@+id/raceLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5.5"
+        android:layout_marginBottom="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="5"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_marginBottom="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <TextView
+                    android:textColor="@android:color/holo_red_dark"
+                    android:id="@+id/betCoin1"
+                    android:layout_width="35dp"
+                    android:paddingLeft="3dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="-100"/>
+                <CheckBox
+                    android:layout_toRightOf="@+id/betCoin1"
+                    android:buttonTint="#E1F3C7"
+                    android:textColor="#E1F3C7"
+                    android:id="@+id/checkBox1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="x2" />
+                <SeekBar
+                    android:id="@+id/seekBar1"
+                    android:max="500"
+                    android:progress="10"
+                    android:layout_marginRight="0dp"
+                    android:progressDrawable="@android:color/transparent"
+                    android:thumb="@drawable/thumb1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/checkBox1"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginBottom="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <TextView
+                    android:textColor="@android:color/holo_red_dark"
+                    android:id="@+id/betCoin2"
+                    android:layout_width="35dp"
+                    android:paddingLeft="3dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="-100"/>
+                <CheckBox
+                    android:layout_toRightOf="@+id/betCoin2"
+                    android:buttonTint="#E1F3C7"
+                    android:textColor="#E1F3C7"
+                    android:id="@+id/checkBox2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="x2" />
+                <SeekBar
+                    android:id="@+id/seekBar2"
+                    android:max="500"
+                    android:progress="10"
+                    android:layout_marginRight="0dp"
+                    android:progressDrawable="@android:color/transparent"
+                    android:thumb="@drawable/thumb2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/checkBox2"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginBottom="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <TextView
+                    android:textColor="@android:color/holo_red_dark"
+                    android:id="@+id/betCoin3"
+                    android:layout_width="35dp"
+                    android:paddingLeft="3dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="-100"/>
+                <CheckBox
+                    android:layout_toRightOf="@+id/betCoin3"
+                    android:buttonTint="#E1F3C7"
+                    android:textColor="#E1F3C7"
+                    android:id="@+id/checkBox3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="x2" />
+                <SeekBar
+                    android:id="@+id/seekBar3"
+                    android:max="500"
+                    android:progress="10"
+                    android:layout_marginRight="0dp"
+                    android:progressDrawable="@android:color/transparent"
+                    android:thumb="@drawable/thumb3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/checkBox3"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginBottom="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <TextView
+                    android:textColor="@android:color/holo_red_dark"
+                    android:id="@+id/betCoin4"
+                    android:layout_width="35dp"
+                    android:paddingLeft="3dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="-100"/>
+                <CheckBox
+                    android:layout_toRightOf="@+id/betCoin4"
+                    android:buttonTint="#E1F3C7"
+                    android:textColor="#E1F3C7"
+                    android:id="@+id/checkBox4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="x2" />
+                <SeekBar
+                    android:id="@+id/seekBar4"
+                    android:max="500"
+                    android:progress="10"
+                    android:layout_marginRight="0dp"
+                    android:progressDrawable="@android:color/transparent"
+                    android:thumb="@drawable/thumb4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/checkBox4"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginBottom="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <TextView
+                    android:textColor="@android:color/holo_red_dark"
+                    android:id="@+id/betCoin5"
+                    android:layout_width="35dp"
+                    android:paddingLeft="3dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="-100"/>
+                <CheckBox
+                    android:layout_toRightOf="@+id/betCoin5"
+                    android:buttonTint="#E1F3C7"
+                    android:textColor="#E1F3C7"
+                    android:id="@+id/checkBox5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="x2" />
+                <SeekBar
+                    android:id="@+id/seekBar5"
+                    android:max="500"
+                    android:progress="10"
+                    android:layout_marginRight="0dp"
+                    android:progressDrawable="@android:color/transparent"
+                    android:thumb="@drawable/thumb5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/checkBox5"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:id="@+id/play_button"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/play_button" />
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:id="@+id/reset_button"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/reset_button" />
+    </RelativeLayout>
+
+</LinearLayout>

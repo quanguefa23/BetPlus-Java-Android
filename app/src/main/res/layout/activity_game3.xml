@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:weightSum="10"
+    android:orientation="vertical"
+    android:background="@drawable/background_main"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main_layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="145dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.32999998">
+
+            <TextView
+                android:id="@+id/game3_addCoin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_addcoin"
+                android:drawableLeft="@drawable/addcoin_shape"
+                android:paddingLeft="12dp"
+                android:paddingTop="7dp"
+                android:paddingRight="12dp"
+                android:paddingBottom="7dp"
+                android:layout_marginTop="5dp"
+                android:text="  FREE COIN"
+                android:textColor="#EE920A"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/game3_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Player: notSetYet"
+                android:textColor="#CACACA"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/game3_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Level : 0"
+                android:textColor="#CACACA"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_marginTop="7dp"
+                android:id="@+id/game3_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#E6FFFFFF"
+                android:text="Kết quả: (chưa xổ)"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/game3_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/game3_title_background"
+            android:fontFamily="sans-serif-medium"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="VÉ SỐ"
+            android:textColor="#EFFCEF"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.39">
+
+            <LinearLayout
+                android:layout_marginTop="0dp"
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="20dp"
+                    android:id="@+id/game3_guide"
+                    android:layout_width="26dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/guide"/>
+                <ImageView
+                    android:layout_marginEnd="20dp"
+                    android:id="@+id/game3_info_date"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/date"/>
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="10dp"
+                    android:id="@+id/game3_back"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/back"/>
+            </LinearLayout>
+
+            <TextView
+                android:background="@drawable/history_background"
+                android:id="@+id/game3_history"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="6dp"
+                android:drawableRight="@drawable/history_shape"
+                android:text="Đã mua"
+                android:textStyle="bold"
+                android:textColor="#32B48A"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/game3_sumcoin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginBottom="-9dp"
+                android:layout_marginEnd="15dp"
+                android:drawableEnd="@drawable/coin_shape"
+                android:text="1000 "
+                android:textColor="#FAB40A"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/game3_sumgem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_gravity="end"
+                android:drawableEnd="@drawable/gem_shape"
+                android:text="0 "
+                android:textColor="#03A9F4"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/game3_radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:checkedButton="@id/game3_coin100"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/game3_title">
+
+            <RadioButton
+                android:id="@+id/game3_coin100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_rate_game3"
+                android:buttonTint="#B88E12"
+                android:paddingRight="7dp"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:text="100"
+                android:textColor="#B88E12"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/game3_coin300"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_rate_game3"
+                android:buttonTint="#B88E12"
+                android:paddingRight="7dp"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:text="300"
+                android:textColor="#B88E12"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/game3_coin500"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_rate_game3"
+                android:buttonTint="#B88E12"
+                android:paddingRight="7dp"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:text="500"
+                android:textColor="#B88E12"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+        </RadioGroup>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+        <GridLayout
+            android:id="@+id/game3_gridLayout"
+            android:columnCount="10"
+            android:rowCount="10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </GridLayout>
+    </ScrollView>
+</LinearLayout>
